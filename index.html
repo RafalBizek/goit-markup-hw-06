@@ -455,11 +455,11 @@
           </div>
           <div class="footer__form">
             <h2 class="footer__form-title">zapisz się do newslettera</h2>
-            <form method="#" name="#" class="footer__newsletter">
+            <form method="GET" name="signupForm" class="footer__newsletter">
               <input
                 type="email"
                 name="userEmail"
-                placeholder="e-mail"
+                placeholder="E-mail"
                 class="footer__newsletter-input"
               />
               <button type="submit" class="footer__btn">
@@ -481,57 +481,63 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form method="" name="" class="form__modal">
+        <form method="GET" name="contactForm" class="form__modal">
           <h2 class="form__title">zostaw swoje dane w formularzu poniżej</h2>
           <ul class="form__items">
             <li class="form__item">
               <label for="name-input" class="form__label">imię</label>
               <input
+                class="form__input"
                 id="name-input"
                 type="text"
                 name="userName"
-                placeholder=""
               />
-              <!-- <svg class="" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
-              </svg> -->
+              </svg>
             </li>
             <li class="form__item">
               <label for="tel-input" class="form__label">telefon</label>
-              <input id="tel-input" type="tel" name="userTel" placeholder="" />
-              <!-- <svg class="" width="18" height="18">
+              <input
+                class="form__input"
+                id="tel-input"
+                type="tel"
+                name="userTel"
+              />
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
-              </svg> -->
+              </svg>
             </li>
             <li class="form__item">
               <label for="email-input" class="form__label">email</label>
               <input
+                class="form__input"
                 id="email-input"
                 type="email"
                 name="userEmail"
-                placeholder=""
               />
-              <!-- <svg class="" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
-              </svg> -->
+              </svg>
             </li>
             <li class="form__item">
               <label for="comment-input" class="form__label">komentarz</label>
               <textarea
+                class="form__textarea"
                 id="comment-input"
-                type="text"
                 name="userComment"
-                placeholder="wprowadź tekst"
+                placeholder="Wprowadź tekst"
               ></textarea>
             </li>
             <li class="form__item">
               <input
+                class="form__rules"
                 id="statute"
                 type="checkbox"
                 name="statuteBox"
                 value="accepted"
               />
-              <label for="statute" class="form__label">
+              <label for="statute" class="form__label--rules">
                 oświadczam iż akceptuję
                 <a href="#" target="_blank" class="form__label-link">
                   regulamin
@@ -540,6 +546,9 @@
                 <a href="#" target="_blank" class="form__label-link"
                   >politykę prywatności</a
                 >
+                <svg class="form__icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
               </label>
             </li>
           </ul>
