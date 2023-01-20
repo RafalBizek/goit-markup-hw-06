@@ -574,7 +574,7 @@ ul {
   animation: modal-open 3s forwards;
 }
 .is-hidden {
-  /* display: none; */
+  display: none;
 }
 @keyframes modal-open {
   0% {
@@ -603,7 +603,6 @@ ul {
 }
 .form__modal {
   margin: 0 40px;
-  /* position: relative; */
 }
 .form__title {
   --color: #212121;
