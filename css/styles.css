@@ -678,6 +678,7 @@ ul {
 }
 .form__label--rules {
   position: relative;
+  cursor: pointer;
 }
 .form__label--rules::before {
   display: block;
