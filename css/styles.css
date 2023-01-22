@@ -694,6 +694,7 @@ ul {
 }
 .form__rules:checked + .form__label--rules::before {
   background-color: var(--color-four);
+  border-color: var(--color-four);
 }
 .form__item:nth-child(5) .form__icon {
   position: absolute;
